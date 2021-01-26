@@ -1,0 +1,444 @@
+--- 
+intents: 
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - greet_2
+  - RPA
+  - RPA_Benefits
+  - RPA_Tools
+  - Company_Profile
+  - Company_Services
+  - Clients
+  - Contact
+  - AI
+  - Importance_of_AI
+  - Applications_of_AI
+  - Job_Application
+  - ML
+  - NLP
+  - Robotics
+  - Automation
+  - MachineLearningBenefits
+  - AIvsCognitive
+  - Blueprism
+  - Uipath
+  - AbusiveContent
+  - MachineLearningApplication
+  - Surprise
+  - Actions
+  - W-words
+  - How
+  - Asking
+  - CompanyUniqueness
+  - BotIdentity
+  - MachinelearningAlgorithm
+  - WhatRUdoing
+  - CompanyProduct
+  - Location
+  - Agent
+  - VirtechStrength
+  - UiPathvsBluePrism
+  - RPALanguages
+  - BotUnique
+  - CompanyExperience
+  - GeneralAboutYou
+  - GeneralEnding
+  - GeneralGreetings
+  - GeneralNegativeFeedback
+  - GeneralSecurityAssurance
+  - Privacy
+  - RPAapplications
+  - CareerOpportunity
+  - details
+
+slots:
+  name:
+    type: unfeaturized
+  phone:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+    
+responses: 
+  utter_AI: 
+    - 
+      text: "Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning (the acquisition of information and rules for using the information), reasoning (using rules to reach approximate or definite conclusions) and self-correction."
+      buttons:
+      - title: "Importance of AI"
+      - payload: "/Importance_of_AI"      
+      - title: "Applications of AI"
+      - payload: "/Applications_of_AI"  
+      - title: "AI verses Cognitive"
+      - payload: "/AIvsCognitive"
+      - title: "Other"
+      - payload: "/details"
+
+  utter_AIvsCognitive: 
+    - 
+      text: "Cognitive Computing tries to replicate how humans would solve problems while AI seeks to create new ways to solve problems that can potentially be better than humans.AI is not intended to mimic human thoughts and processes but to solve a problem through the best possible algorithm."
+
+  utter_AbusiveContent: 
+    - 
+      text: "Looks like you are unsatisfied. I am sorry for the inconvenience caused, Will try to resolve your problem as soon as possible."
+  utter_Actions: 
+    - 
+      text: "Sorry our company does not deal with this out of subject matter or actions."
+  utter_Agent: 
+    - 
+      text: "For further details please contact +966 560 706 596."
+  utter_Asking: 
+    - 
+      text: "How may I help you?"
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile"  
+  utter_Automation: 
+    - 
+      text: "What makes a system or process function automatically. For example robotic process automation can be programmed to perform high-volume repeatable tasks that humans normally performed."
+  utter_Blueprism: 
+    - 
+      text: "Blue Prism is the trading name of the Blue Prism Group a UK multinational software corporation that pioneered and makes enterprise robotic process automation software to eliminate low-return high-risk manual data entry and processing work."
+  utter_BotIdentity: 
+    - 
+      text: "Hi my name is Virtuozo & I'm here to assist you Let me know how Virtech can help you."
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile" 
+      - title: "Other"
+      - payload: "/details"
+  utter_CareerOpportunity: 
+    - 
+      text: "Kindly drop your CV at info@virtech-ksa.com"
+      buttons: 
+      - title: "Other"
+      - payload: "/details"
+
+
+  utter_ask_name:
+  - text: "what is your name?"
+
+  utter_ask_phone:
+  - text: "please provide your contact number"
+
+  utter_ask_email:
+  - text: "tell me your email id"
+  
+  utter_ask_location:
+  - text: "tell me your current location"
+
+  utter_wrong_phone:
+  - text: "You have entered wrong number"
+  
+  utter_wrong_email:
+  - text: "Please check and enter valid email address"
+
+  utter_wrong_name:
+  - text: "Name should contain only alphabets"
+
+  utter_wrong_location:
+  - text: "Location should contain only alphabets"
+
+
+  utter_slots_values:
+  - text: "The contact details provided are :\n
+             - name: {name}\n
+             - phone: {phone}\n
+             - email: {email}\n 
+             - location: {location}"
+
+  utter_BotUnique: 
+    - 
+      text: "I have been designed to handle most of the human company related queries in an efficient manner Also Im emotionally stable which makes me better."
+  utter_CompanyExperience: 
+    - 
+      text: "Virtech was established in 2018 and since then its been two year that we are progressing and reaching heights."
+  utter_CompanyProduct: 
+    - 
+      text: "Virtech is a service based company and as for now we do not cater any product based processes."
+  utter_CompanyUniqueness: 
+    - 
+      text: "What makes us unique and better have many aspects out of few that include are as follows \n 1. Maximum query solved We ensure to provide the right quality of solutions for our in-line business and on-board clients for resolving queries. \n 2. We make lives better and purposeful for our clients and business partners on-board  we require the right resources and experienced professionals to our league. \n 3.Quick Turnaround We deliver our services within the turn-around-time for enhanced improvement and performance in the competitive corporate market."
+  utter_GeneralAboutYou: 
+    - 
+      text: "Hey I'm Vbot designed to assist you through our company website and not for other activities. I speak English and Arabic. For any further assistance you may kindly contact at (+966) 552 357 583 or at info@virtech-ksa.com"
+  utter_GeneralEnding: 
+    - 
+      text: "Ok We are glad for your time. Hope to see you again."
+  utter_GeneralGreetings: 
+    - 
+      text: "Hi Im Vbot, Good day to you! How may I help you with today"
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile"  
+      - title: "Other"
+      - payload: "/details"
+  utter_GeneralNegativeFeedback: 
+    - 
+      text: "Opps sorry for that You call our live agent at +966 552 357 583. We will try resolve your query as soon as possible."
+  utter_GeneralSecurityAssurance: 
+    - 
+      text: "We are extremely peculiar about safeguarding our process while automating or while dealing with any of our projects. The Automation tools we use that is BluePrism   Uipath  or any other tool for AI  have a very secured Credential Management system to maintain the privacy. It also has Audit trails to trace every action and it is being logged in log files at each and every step of the process."
+  utter_How: 
+    - 
+      text: "Fine Thankyou How about you"
+  utter_Location: 
+    - 
+      text: "We are located at Al Yasmin King Abdulaziz road Riyadh KSA For any Further queries contact +966 560 706 596"
+  utter_ML: 
+    - 
+      text: "The science of getting a computer to act without programming. Deep learning is a subset of machine learning that, in very simple terms, can be thought of as the automation of predictive analytics. There are three types of machine learning algorithms \n 1.Supervised learning Data sets are labeled so that patterns can be detected and  used to label new data sets\n 2. Unsupervised learning Data sets aren't labeled and are sorted according to  similarities or differences \n 3. Reinforcement learning Data sets aren't labeled but, after performing an action or several actions, the AI system is given feedback."
+      buttons:
+      - title: "ML Benefits"
+      - payload: "/MachineLearningBenefits"      
+      - title: "ML Application"
+      - payload: "/MachineLearningApplication"
+      - title: "ML Algorithms"
+      - payload: "/MachinelearningAlgorithm"
+      - title: "Other"
+      - payload: "/details"
+  utter_MachineLearningApplication: 
+    - 
+      text: "Following are few Machine learning applications \n 1. Virtual Personal Assistants \n 2. Predictions while Commuting \n 3. Videos Surveillance \n 4. Social Media Services \n 5. Email Spam and Malware Filtering \n 6. Online Customer Support \n 7. Search Engine Result Refining"
+      buttons:
+      - title: "ML Benefits"
+      - payload: "/MachineLearningBenefits"      
+      - title: "ML Algorithms"
+      - payload: "/MachinelearningAlgorithm"
+      - title: "Other"
+      - payload: "/details"
+  utter_MachineLearningBenefits: 
+    - 
+      text: "Machine Learning has tools available to provide continuous quality improvement in large and complex process environments. Machine learning is used to predict/estimate the values of variables using historical data as well as allows time cycle reduction and efficient utilization of resources."
+      buttons:
+      - title: "ML Application"
+      - payload: "/MachineLearningApplication"
+      - title: "ML Algorithms"
+      - payload: "/MachinelearningAlgorithm"
+      - title: "Other"
+      - payload: "/details"
+  utter_MachinelearningAlgorithm: 
+    - 
+      text: "Few Machine Learning Algorithms are listed below.\n 1. Logistic Regression \n 2. Decision Tree \n 3. SVM \n 4. Naive Bayes \n 5. kNN"
+      buttons:
+      - title: "ML Benefits"
+      - payload: "/MachineLearningBenefits"      
+      - title: "ML Application"
+      - payload: "/MachineLearningApplication"
+      - title: "Other"
+      - payload: "/details"
+
+  utter_NLP: 
+    - 
+      text: "One of the older and best known examples of NLP is spam detection, which looks at the subject line and the text of an email and decides if it's junk. Current approaches to NLP are based on machine learning. NLP tasks include text translation, sentiment analysis and speech recognition"
+  utter_Privacy: 
+    - 
+      text: "We would like you to know that due to privacy concerns  we do not leak certain information that can lead to any further misuse in the best interest of the company and it is employers."
+  utter_RPALanguages: 
+    - 
+      text: "Few languages that can be used in RPA include C/C++, Python, Java, C#, .Net Matlab HDL LISP Basic,Pascal etc"
+  utter_RPAapplications: 
+    - 
+      text: "Applications of RPA include Supply chain management Customer Service Accounting Financial Services Healthcare Human Resources and many more."
+      buttons:
+      - title: "RPA Tools"
+      - payload: "/RPA_Tools"
+      - title: "RPA Benefits"
+      - payload: "/RPA_Benefits"
+
+  utter_Surprise: 
+    - 
+      text: "We are glad, let me help you."
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile"
+      - title: "Other"
+      - payload: "/details"
+
+  utter_UiPathvsBluePrism: 
+    - 
+      text: "Tools are selected based on their requirements by the process in the market which are different from one another and hence there is no best tool. UiPath explorer is not as robust as Blue Prism application modeller but over the period of time you will find UiPath is easier to work due to direct edit on target script. UiPath has free community edition while Blue Prism doesn’t have their community edition for students and small scale company. It takes time to learn Blue Prism when compared to UiPath. UiPath has screen recorder while BluePrism lacks it  etc."
+
+  utter_Uipath: 
+    - 
+      text: "UiPath is a leading Robotic Process Automation vendor providing a complete software platform to help organizations efficiently automate business processes."
+
+  utter_VirtechStrength: 
+    - 
+      text: "Virtech is a team of 100 members."
+
+  utter_W-words: 
+    - 
+      text: "Please tell me?"
+
+  utter_WhatRUdoing: 
+    - 
+      text: "At your service."
+
+  utter_applications_of_AI: 
+    - 
+      text: "Finance  AI in personal finance applications, such as Mint or Turbo Tax, is disrupting financial institutions. Applications such as these collect personal data and provide financial advice. Other programs, such as IBM Watson, have been applied to the process of buying a home Education in  AI can automate grading, giving educators more time. AI can assess students and adapt to their needs, helping them work at their own pace. AI tutors can provide additional support to students, ensuring they stay on track. Law in AI The discovery process, sifting through of documents, in law is often overwhelming for humans. Automating this process is a more efficient use of time. Startups are also building question-and-answer computer assistants that can sift programmed-to-answer questions by examining the taxonomy and ontology associated with a database. Manufacture in AIIndustrial robots used to perform single tasks and were separated from human workers, but as the technology advanced that changed AI impact on frontline marketting operations include Increased efficiency and productivity, better customer journey support, pro active engagement, pre emptive service, personal engagement, etc Business in AI  Robotic process automation is being applied to highly repetitive tasks normally performed by humans. Machine learning algorithms are being integrated into analytics and CRM platforms to uncover information on how to better serve customers. Chatbots have been incorporated into websites to provide immediate service to customers. Automation of job positions has also become a talking point among academics and IT analysts. Healthcare in AI The biggest bets are on improving patient outcomes and reducing costs. Companies are applying machine learning to make better and faster diagnoses than humans.  One of the best known healthcare technologies is IBM Watson. It understands natural language and is capable of responding to questions asked of it.The system mines patient data and other available data sources to form a hypothesis, which it then presents with a confidence scoring schema. Other AI applications include chatbots, a computer program used online to answer questions and assist customers, to help schedule follow-up appointments or aid patients through the billing process, and virtual health assistants that provide basic medical feedback, etc."
+  utter_cheer_up: 
+    - 
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+      text: "Here is something to cheer you up:"
+  utter_client: 
+    - 
+      text: "Virtech is currently dealing with two clients. /n 1.Saudi Telecom Company(STC)-Saudi Arabia-based telecommunications company that offers landline, mobile, Internet services and computer networks. /n 2.Saudi Investment Bank- The Saudi Investment Bank provides a full range of commercial banking services to companies and individuals."
+  utter_company_profile: 
+    - 
+      text: "We help organisations with expanding workloads, unpredictable costs or service deterioration to open up new opportunities for staff deployment, innovation, compliance and better information through process automation."    
+      buttons:
+      - title: "Company Product"
+      - payload: "/CompanyProduct"  
+      - title: "Clients"
+      - payload: "/Clients"  
+      - title: "Contact Us"
+      - payload: "/Contact"  
+      - title: "Other"
+      - payload: "/details"
+  utter_company_services: 
+    - 
+      text: "Consulting, Training, IT Services, Healthcare, Shared services, Financial."
+      buttons:
+      - title: "Company Product"
+      - payload: "/CompanyProduct"  
+      - title: "Clients"
+      - payload: "/Clients"  
+      - title: "Contact Us"
+      - payload: "/Contact"  
+      - title: "Other"
+      - payload: "/details"
+  utter_contact: 
+    - 
+      text: "We would love to hear from you! Feel free to reach out to us on our email id-info@virtech-ksa or Contact Number-+966 560 706 596. We will assist you as soon as possible."
+  utter_did_that_help: 
+    - 
+      text: "Did that help you?"
+  utter_goodbye: 
+    - 
+      text: "Hope see you again!, Bye."
+  utter_greet: 
+    - 
+      text: "Hey! How are you?"
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile" 
+      - title: "Other"
+      - payload: "/details"
+  utter_greet_init: 
+    - 
+      text: "Awesome! How are you?"
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile" 
+  utter_happy: 
+    - 
+      text: "Great, how can i help you?"
+      buttons:
+      - title: "Our Services"
+      - payload: "/company_services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile" 
+      - title: "Other"
+      - payload: "/details"
+  utter_iamabot: 
+    - 
+      text: "I am a bot, powered by Rasa."
+  utter_importance_of_AI: 
+    - 
+      text: "Businesses expect Artificial Intelligence to have a positive impact on growth (90 percent), productivity (86 percent), innovation (84 percent) and job creation (69 percent) in their country and industry. Artificial Intelligence is already having a transformative impact across every industry. From helping employees at transportation companies predict arrival times or issues that may arise, to predicting toxins in foodgrains. It’s helping scientists learn how to treat cancer more effectively and farmers are figuring out how to grow more food using fewer natural resources To dig deeper into the business impact Artificial In can bring to specific industries like manufacturing, retail, health care, financial services and the public sector"
+      buttons:     
+      - title: "Applications of AI"
+      - payload: "/Applications_of_AI"  
+      - title: "AI verses Cognitive"
+      - payload: "/AIvsCognitive"
+  utter_job_application: 
+    - 
+      text: "Yes we are hiring ! We are a fast growing startup and are always looking for talented humans! Please review our available positions below by contacting us on +966 560 706 596. You can even forward your resume at info@virtech-ksa."
+  utter_robotics: 
+    - 
+      text: "A field of engineering focused on the design and manufacturing of robots. Robots are often used to perform tasks that are difficult for humans to perform or perform consistently. They are used in assembly lines for car production or by NASA to move large objects in space. Researchers are also using machine learning to build robots that can interact in social settings."
+  utter_rpa_ben: 
+    - 
+      text: "Robotic process automation can provide a better solution and since the work remains in-house, the business maintains maximum possession, control and visibility."
+      buttons:
+      - title: "RPA Tools"
+      - payload: "/RPA_Tools"
+      - title: "RPA Applications"
+      - payload: "/RPAapplications"
+      - title: "Other"
+      - payload: "/details"
+  utter_rpa_def: 
+    - 
+      text: "(RPA) is the use of software with artificial intelligence (AI) and machine learning capabilities to handle high-volume, repeatable tasks that previously required humans to perform"
+      buttons:
+      - title: "RPA Tools"
+      - payload: "/RPA_Tools"
+      - title: "RPA Benefits"
+      - payload: "/RPA_Benefits"
+      - title: "RPA Applications"
+      - payload: "/RPAapplications"
+  utter_rpa_tools: 
+    - 
+      text: "There are many RPA tools available in the market. But we use BluePrism and UiPath in the best interest of customer service. BluePrism and UiPath has it's own database and it's highly secure which makes it more stable."
+      buttons:
+      - title: "RPA Tool - Blueprism"
+      - payload: "/Blueprism"
+      - title: "RPA Tool - Uipath"
+      - payload: "/Uipath"
+      - title: "Blueprism vs Uipath"
+      - payload: "/UiPathvsBluePrism"
+      - title: "Other"
+      - payload: "/details" 
+  utter_default: 
+    - 
+      text: "Sorry, I did not get you."
+      buttons:
+      - title: "Our Services"
+      - payload: "/Company_Services"      
+      - title: "Career Opportunity"
+      - payload: "/CareerOpportunity"  
+      - title: "Know more about us"
+      - payload: "/Company_Profile" 
+      - title: "Other"
+      - payload: "/details"
+
+session_config: 
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+
+forms:
+  - detail_form
